@@ -3,10 +3,6 @@
 
 [deploy]
   startCommand = "python api_proxy_server.py --port $PORT"
-  healthcheckPath = "/"
-  healthcheckTimeout = 60
-  restartPolicyType = "on-failure"
-  restartPolicyMaxRetries = 3
 
 [env]
   WEB_DIR = "build/web"
